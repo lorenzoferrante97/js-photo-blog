@@ -1301,6 +1301,10 @@ video {
   display: none;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-\[12vh\] {
   height: 12vh;
 }
@@ -1873,6 +1877,10 @@ video {
 
 .gap-7u {
   gap: 28px;
+}
+
+.gap-10u {
+  gap: 40px;
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
