@@ -7,3 +7,10 @@ main {
     background-image: url(../img/cork.png);
     background-size: cover;
 }
+
+img[alt="pin"] {
+    z-index: 5;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

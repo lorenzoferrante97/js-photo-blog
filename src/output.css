@@ -1142,6 +1142,10 @@ video {
   right: 4px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -1327,6 +1331,22 @@ video {
 
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
+}
+
+.w-7u {
+  width: 28px;
+}
+
+.w-20u {
+  width: 80px;
+}
+
+.w-12u {
+  width: 48px;
+}
+
+.w-14u {
+  width: 56px;
 }
 
 .flex-shrink {
