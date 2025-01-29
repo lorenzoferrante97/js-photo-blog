@@ -1,0 +1,705 @@
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
+@tailwind base;
+/**
+ * This injects Tailwind's component classes and any component classes
+ * registered by plugins.
+ */
+@tailwind components;
+/**
+ * This injects Tailwind's utility classes and any utility classes registered
+ * by plugins.
+ */
+@tailwind utilities;
+
+
+/**
+ * Elementi base (colori del brand, font del brand, spacing personale...)
+ */
+@layer base {
+
+    /* ANCHOR SEMANTIC COLORS */
+
+    /* ANCHOR neutral */
+
+    /* bg */
+
+    .neutral-bg {
+        @apply bg-white;
+    }
+    .neutral-bg-alt {
+        @apply bg-dust-50;
+    }
+    .neutral-bg-high {
+        @apply bg-dust-100;
+    }
+
+    /* on bg */
+
+    .neutral-on-bg-low {
+        @apply text-dust-500;
+    }
+    .neutral-on-bg-mid {
+        @apply text-dust-700;
+    }
+    .neutral-on-bg {
+        @apply text-dust-900;
+    }
+
+    /* border */
+
+    .neutral-border-low {
+        @apply border-dust-200;
+    }
+    .neutral-border {
+        @apply border-dust-500;
+    }
+
+    /* component */
+
+    .neutral-comp {
+        @apply bg-dust-200;
+    }
+    .neutral-comp-alt {
+        @apply bg-dust-700;
+    }
+    .neutral-comp-high {
+        @apply bg-dust-900;
+    }
+
+    /* on component */
+
+    .neutral-on-comp-low {
+        @apply text-dust-800;
+    }
+    .neutral-on-comp {
+        @apply text-white;
+    }
+
+    /* ANCHOR primary */
+
+    /* bg */
+
+    .primary-bg {
+        @apply bg-white;
+    }
+    .primary-bg-alt {
+        @apply bg-cranberry-50;
+    }
+    .primary-bg-high {
+        @apply bg-cranberry-100;
+    }
+
+    /* on bg */
+
+    .primary-on-bg-low {
+        @apply text-cranberry-500;
+    }
+    .primary-on-bg-mid {
+        @apply text-cranberry-700;
+    }
+    .primary-on-bg {
+        @apply text-cranberry-900;
+    }
+
+    /* border */
+
+    .primary-border-low {
+        @apply border-cranberry-200;
+    }
+    .primary-border {
+        @apply border-cranberry-400;
+    }
+
+    /* component */
+
+    .primary-comp {
+        @apply bg-cranberry-200;
+    }
+    .primary-comp-alt {
+        @apply bg-cranberry-700;
+    }
+    .primary-comp-high {
+        @apply bg-cranberry-900;
+    }
+
+    /* on component */
+
+    .primary-on-comp-low {
+        @apply text-cranberry-800;
+    }
+    .primary-on-comp {
+        @apply text-white;
+    }
+
+    /* ANCHOR secondary */
+
+    /* bg */
+
+    .secondary-bg {
+        @apply bg-white;
+    }
+    .secondary-bg-alt {
+        @apply bg-crimson-50;
+    }
+    .secondary-bg-high {
+        @apply bg-crimson-100;
+    }
+
+    /* on bg */
+
+    .secondary-on-bg-low {
+        @apply text-crimson-500;
+    }
+    .secondary-on-bg-mid {
+        @apply text-crimson-700;
+    }
+    .secondary-on-bg {
+        @apply text-crimson-900;
+    }
+
+    /* border */
+
+    .secondary-border-low {
+        @apply border-crimson-200;
+    }
+    .secondary-border {
+        @apply border-crimson-400;
+    }
+
+    /* component */
+
+    .secondary-comp {
+        @apply bg-crimson-200;
+    }
+    .secondary-comp-alt {
+        @apply bg-crimson-700;
+    }
+    .secondary-comp-high {
+        @apply bg-crimson-900;
+    }
+
+    /* on component */
+
+    .secondary-on-comp-low {
+        @apply text-crimson-800;
+    }
+    .secondary-on-comp {
+        @apply text-white;
+    }
+
+    /* ANCHOR terziary */
+
+    /* bg */
+
+    .terziary-bg {
+        @apply bg-white;
+    }
+    .terziary-bg-alt {
+        @apply bg-amethyst-50;
+    }
+    .terziary-bg-high {
+        @apply bg-amethyst-100;
+    }
+
+    /* on bg */
+
+    .terziary-on-bg-low {
+        @apply text-amethyst-500;
+    }
+    .terziary-on-bg-mid {
+        @apply text-amethyst-600;
+    }
+    .terziary-on-bg {
+        @apply text-amethyst-900;
+    }
+
+    /* border */
+
+    .terziary-border-low {
+        @apply border-amethyst-200;
+    }
+    .terziary-border {
+        @apply border-amethyst-400;
+    }
+
+    /* component */
+
+    .terziary-comp {
+        @apply bg-amethyst-200;
+    }
+    .terziary-comp-alt {
+        @apply bg-amethyst-600;
+    }
+    .terziary-comp-high {
+        @apply bg-amethyst-900;
+    }
+
+    /* on component */
+
+    .terziary-on-comp-low {
+        @apply text-amethyst-700;
+    }
+    .terziary-on-comp {
+        @apply text-white;
+    }
+
+    /* ANCHOR accent */
+
+    /* bg */
+
+    .accent-bg {
+        @apply bg-white;
+    }
+    .accent-bg-alt {
+        @apply bg-jade-50;
+    }
+    .accent-bg-high {
+        @apply bg-jade-100;
+    }
+
+    /* on bg */
+
+    .accent-on-bg-low {
+        @apply text-jade-800;
+    }
+    .accent-on-bg-mid {
+        @apply text-jade-900;
+    }
+    .accent-on-bg {
+        @apply text-black;
+    }
+
+    /* border */
+
+    .accent-border-low {
+        @apply border-jade-400;
+    }
+    .accent-border {
+        @apply border-jade-700;
+    }
+
+    /* component */
+
+    .accent-comp {
+        @apply bg-jade-500;
+    }
+    .accent-comp-alt {
+        @apply bg-jade-900;
+    }
+    .accent-comp-high {
+        @apply bg-black;
+    }
+
+    /* on component */
+
+    .accent-on-comp-low {
+        @apply text-black;
+    }
+    .accent-on-comp {
+        @apply text-white;
+    }
+
+    /* ANCHOR error */
+
+    /* bg */
+
+    .error-bg {
+        @apply bg-white;
+    }
+    .error-bg-alt {
+        @apply bg-tomato-50;
+    }
+    .error-bg-high {
+        @apply bg-tomato-100;
+    }
+
+    /* on bg */
+
+    .error-on-bg-low {
+        @apply text-tomato-500;
+    }
+    .error-on-bg-mid {
+        @apply text-tomato-700;
+    }
+    .error-on-bg {
+        @apply text-tomato-900;
+    }
+
+    /* border */
+
+    .error-border-low {
+        @apply border-tomato-200;
+    }
+    .error-border {
+        @apply border-tomato-400;
+    }
+
+    /* component */
+
+    .error-comp {
+        @apply bg-tomato-300;
+    }
+    .error-comp-alt {
+        @apply bg-tomato-700;
+    }
+    .error-comp-high {
+        @apply bg-tomato-900;
+    }
+
+    /* on component */
+
+    .error-on-comp-low {
+        @apply text-tomato-800;
+    }
+    .error-on-comp {
+        @apply text-white;
+    }
+
+    /* ANCHOR warning */
+
+    /* bg */
+
+    .warning-bg {
+        @apply bg-white;
+    }
+    .warning-bg-alt {
+        @apply bg-dixie-50;
+    }
+    .warning-bg-high {
+        @apply bg-dixie-100;
+    }
+
+    /* on bg */
+
+    .warning-on-bg-low {
+        @apply text-dixie-700;
+    }
+    .warning-on-bg-mid {
+        @apply text-dixie-800;
+    }
+    .warning-on-bg {
+        @apply text-dixie-950;
+    }
+
+    /* border */
+
+    .warning-border-low {
+        @apply border-dixie-300;
+    }
+    .warning-border {
+        @apply border-dixie-500;
+    }
+
+    /* component */
+
+    .warning-comp {
+        @apply bg-dixie-300;
+    }
+    .warning-comp-alt {
+        @apply bg-dixie-800;
+    }
+    .warning-comp-high {
+        @apply bg-dixie-950;
+    }
+
+    /* on component */
+
+    .warning-on-comp-low {
+        @apply text-dixie-800;
+    }
+    .warning-on-comp {
+        @apply text-white;
+    }
+
+    /* ANCHOR success */
+
+    /* bg */
+
+    .success-bg {
+        @apply bg-white;
+    }
+    .success-bg-alt {
+        @apply bg-fern-50;
+    }
+    .success-bg-high {
+        @apply bg-fern-100;
+    }
+
+    /* on bg */
+
+    .success-on-bg-low {
+        @apply text-fern-800;
+    }
+    .success-on-bg-mid {
+        @apply text-fern-900;
+    }
+    .success-on-bg {
+        @apply text-black;
+    }
+
+    /* border */
+
+    .success-border-low {
+        @apply border-fern-400;
+    }
+    .success-border {
+        @apply border-fern-700;
+    }
+
+    /* component */
+
+    .success-comp {
+        @apply bg-fern-500;
+    }
+    .success-comp-alt {
+        @apply bg-fern-900;
+    }
+    .success-comp-high {
+        @apply bg-black;
+    }
+
+    /* on component */
+
+    .success-on-comp-low {
+        @apply text-black;
+    }
+    .success-on-comp {
+        @apply text-white;
+    }
+    
+    /* ANCHOR HEADINGS */
+    
+    .display1 {
+        @apply text-6xl font-bold leading-none mb-4u md:text-7xl lg:text-8xl;
+    }
+    .display2 {
+        @apply text-5xl font-bold leading-none mb-4u md:text-6xl lg:text-7xl;
+    }
+    .display3 {
+        @apply text-[2.5rem] md:text-5xl lg:text-6xl font-bold leading-none mb-4u;
+    }
+    .h1 {
+        @apply text-4xl md:text-[2.5rem] lg:text-5xl font-bold leading-normal mb-4u;
+    }
+    .h2 {
+        @apply text-[2rem] md:text-4xl lg:text-[2.5rem] font-bold leading-normal mb-4u;
+    }
+    .h3 {
+        @apply text-[1.75rem] md:text-[2rem] lg:text-4xl font-semibold leading-normal mb-4u;
+    }
+    .h4 {
+        @apply text-2xl md:text-[1.75rem] lg:text-[2rem] font-semibold leading-normal mb-4u;
+    }
+    .h5 {
+        @apply text-xl md:text-2xl lg:text-[1.75rem] font-medium leading-normal mb-4u;
+    }
+    .h6 {
+        @apply text-lg font-medium leading-normal mb-4u md:text-xl lg:text-2xl;
+    }
+}
+
+/**
+ * Componenti personali (btn-primary, badge, card...)
+ */
+@layer components {
+    /* .btn-blue {
+        @apply px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700;
+    } */
+    
+    /* ANCHOR CONTAINERS */
+
+    /* container fixed alla dimensione del breakpoint */
+    .container-centered {
+        @apply container mx-auto px-4u sm:px-5u lg:px-7u xl:px-10u;
+    }
+    /* container sempre al 100% - es. sezioni con colori di sfondo che prendono tutto lo schermo  */
+    .container-full {
+        @apply w-full;
+    }
+    /* container fluid fino a 1280px, poi fixed */
+    .container-fluid {
+        @apply w-full px-4u xl:container-centered sm:px-5u lg:px-7u xl:px-10u max-w-[96%] mx-auto;
+    }
+
+    /* ANCHOR COLS */
+
+    /* --- 2 cols --- */
+
+    /* base + sm:3/4 md:7/8 lg:11/12 */ 
+    /* 3-1 | 7-1 | 11-1 */
+    .cols2_3-7-11 {
+        @apply col-span-3 md:col-span-7 lg:col-span-11;
+    }
+
+    /* base + sm:3/4 md:6/8 lg:10/12 */
+    /* 3-1 | 6-2 | 10-2 */
+    .cols2_3-6-10 {
+        @apply col-span-3 md:col-span-6 lg:col-span-10;
+    }
+    .cols2_1-2-2 {
+        @apply md:col-span-2;
+    }
+
+    /* base + sm:3/4 md:5/8 lg:9/12 */
+    /* 3-1 | 5-3 | 9-3 */
+    .cols2_3-5-9 {
+        @apply col-span-3 md:col-span-5 lg:col-span-9;
+    }
+    .cols2_1-3-3 {
+        @apply md:col-span-3 lg:col-span-3;
+    }
+
+    /* base + sm:3/4 md:5/8 lg:8/12 */
+    /* 3-1 | 5-3 | 8-4 */
+    .cols2_3-5-8 {
+        @apply col-span-3 md:col-span-5 lg:col-span-8;
+    }
+    .cols2_1-3-4 {
+        @apply md:col-span-3 lg:col-span-4;
+    }
+
+    /* base + sm:3/4 md:5/8 lg:7/12 */
+    /* 3-1 | 5-3 | 7-5 */
+    .cols2_3-5-7 {
+        @apply col-span-3 md:col-span-5 lg:col-span-7;
+    }
+    .cols2_1-3-5 {
+        @apply md:col-span-3 lg:col-span-5;
+    }
+
+    /* full-full | 4-4 | 7-5 */
+    .cols2_full-4-7 {
+        @apply col-span-full md:col-span-4 lg:col-span-7;
+    }
+    .cols2_full-4-5 {
+        @apply col-span-full md:col-span-4 lg:col-span-5;
+    }
+
+    /* full-full | full-full | 7-5 */
+    .cols2_full-full-7 {
+        @apply col-span-full lg:col-span-7;
+    }
+    .cols2_full-full-5 {
+        @apply col-span-full lg:col-span-5;
+    }
+
+    /* 2 equals cols */
+    /* 2-2 | 4-4 | 6-6 */
+    .cols2_equal {
+        @apply col-span-2 md:col-span-4 lg:col-span-6;
+    }
+
+    /* --- 3 cols --- */
+
+    /* base + sm:2/4 md:6/8 lg:10/12 */
+    /* 2-1-1 | 6-1-1 | 10-1-1 */
+    .cols3_2-6-10 {
+        @apply col-span-2 md:col-span-6 lg:col-span-10;
+    }
+
+    /* base + sm:2/4 md:4/8 lg:8/12 */
+    /* 2-1-1 | 4-2-2 | 8-2-2 */
+    .cols3_2-4-8 {
+        @apply col-span-2 md:col-span-4 lg:col-span-8;
+    }
+    .cols3_1-2-2 {
+        @apply md:col-span-2;
+    }
+
+    /* base + sm:2/4 md:4/8 lg:6/12 */
+    /* 2-1-1 | 4-2-2 | 6-3-3 */
+    .cols3_2-4-6 {
+        @apply col-span-2 md:col-span-4 lg:col-span-6;
+    }
+    .cols3_1-2-3 {
+        @apply md:col-span-2 lg:col-span-3;
+    }
+
+    /* progressive growth */
+    /* 1-1-2 | 1-2-5 | 2-4-6 */
+    .cols3_1-1-2 {
+        @apply md:col-span-1 lg:col-span-2;
+    }
+    .cols3_1-2-4 {
+        @apply md:col-span-2 lg:col-span-4;
+    }
+    .cols3_2-5-6 {
+        @apply col-span-2 md:col-span-5 lg:col-span-6;
+    }
+
+    /* --- 4 cols --- */
+
+    /* 4 equals cols */
+    /* 1-1-1-1 | 2-2-2-2 | 3-3-3-3 */
+    .cols4_equal {
+        @apply md:col-span-2 lg:col-span-3;
+    }
+
+    /* progressive growth */
+    /* 2-2 full-full | 1-1-2-4 | 2-2-3-5 */
+    .cols4_2-1-2 {
+        @apply col-span-2 md:col-span-1 lg:col-span-2;
+    }
+    .cols4_full-2-3 {
+        @apply col-span-full md:col-span-2 lg:col-span-3;
+    }
+    .cols4_full-4-5 {
+        @apply col-span-full md:col-span-4 lg:col-span-5;
+    }
+
+    /* ANCHOR ROWS */
+
+    /* classic website row */
+    /* base + sm:4 col | md:8 col | lg:12 col */
+    .row-webgrid {
+        @apply grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12;
+    }
+
+    /* flex row */
+    /* fino a sm:col | md:row */
+    .row {
+        @apply flex flex-col md:flex-row;
+    }
+    /* flex row centered content */
+    .row-centered {
+        @apply row perfect-center;
+    }
+
+    /* ANCHOR CARDS */
+
+    .card {
+        @apply flex flex-col p-5u gap-7u;
+    }
+    .card-rounded {
+        @apply rounded-lg card;
+    }
+
+    /* ANCHOR BUTTONS */
+
+    .btn {
+        @apply text-lg font-semibold px-6u py-4u perfect-center;
+    }
+    .btn-rounded {
+        @apply rounded-full btn;
+    }
+}
+
+/**
+ * Specifiche molto nel dettaglio (opacity, blur...)
+ */
+@layer utilities {
+    /* .filter-grayscale {
+        filter: grayscale(100%);
+    } */
+    .perfect-center {
+        @apply flex items-center justify-center;
+    }
+
+    /* responsive image */
+    .img-responsive {
+        @apply object-cover w-full h-full;
+    }
+}
