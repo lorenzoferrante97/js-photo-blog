@@ -2461,6 +2461,10 @@ video {
   font-family: Edu TAS Beginner, serif;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
