@@ -1,6 +1,10 @@
 // recupero container cards
 const cardList = document.getElementById("card-list");
 
+let card;
+let modal;
+let modalClose;
+
 // fetch API
 fetch('https://lanciweb.github.io/demo/api/pictures/')
 .then(response => response.json())
@@ -30,19 +34,22 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
         `;
     });
 
-    let card = document.querySelectorAll(".card-selector")
+    card = document.querySelectorAll(".card-selector")
+    modal = document.getElementById("card-img-modal");
     console.log(card)
-    // card.forEach(element => {
-    //     element.addEventListener('click', () => {
-    //         console.log("ciao")
-    //     })
-    // });
     for (let i = 0; i < card.length; i++) {
-        card[i].addEventListener('click', () => {
-            console.log("ciao")
+        let cardClick = card[i];
+        cardClick.addEventListener('click', () => {
+            modal.classList.toggle("hidden")
         })
     }
 })
 .catch(error => {
 
+})
+
+modalClose = document.getElementById("modal-close");
+
+modalClose.addEventListener('click', () => {
+    modal.classList.toggle("hidden")
 })
