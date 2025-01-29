@@ -4,6 +4,7 @@ const cardList = document.getElementById("card-list");
 let card;
 let modal;
 let modalClose;
+let modalImg;
 
 // fetch API
 fetch('https://lanciweb.github.io/demo/api/pictures/')
@@ -34,13 +35,22 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
         `;
     });
 
-    card = document.querySelectorAll(".card-selector")
+    card = document.querySelectorAll(".card-selector");
     modal = document.getElementById("card-img-modal");
+    modalImg = document.querySelector("#modal-img");
     console.log(card)
     for (let i = 0; i < card.length; i++) {
+
         let cardClick = card[i];
+        let cardImgSrc = cardClick.querySelector("figure img").getAttribute("src");
+        let cardImgAlt = cardClick.querySelector("figure img").getAttribute("alt");
+        console.log("card click: ", cardClick)
         cardClick.addEventListener('click', () => {
             modal.classList.toggle("hidden")
+            modalImg.innerHTML = 
+            `
+                <img src="${cardImgSrc}" alt="${cardImgAlt}" class="object-scale-down w-full h-full">
+            `;
         })
     }
 })
