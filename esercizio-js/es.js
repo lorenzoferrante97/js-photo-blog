@@ -32,11 +32,16 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
 
     let card = document.querySelectorAll(".card-selector")
     console.log(card)
-    card.forEach(element => {
-        element.addEventListener('click', () => {
+    // card.forEach(element => {
+    //     element.addEventListener('click', () => {
+    //         console.log("ciao")
+    //     })
+    // });
+    for (let i = 0; i < card.length; i++) {
+        card[i].addEventListener('click', () => {
             console.log("ciao")
         })
-    });
+    }
 })
 .catch(error => {
 
