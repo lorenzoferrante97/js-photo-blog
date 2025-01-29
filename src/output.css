@@ -2518,6 +2518,21 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-makara-700 {
+  --tw-text-opacity: 1;
+  color: rgb(111 97 88 / var(--tw-text-opacity, 1));
+}
+
+.text-makara-900 {
+  --tw-text-opacity: 1;
+  color: rgb(65 53 47 / var(--tw-text-opacity, 1));
+}
+
+.text-makara-600 {
+  --tw-text-opacity: 1;
+  color: rgb(132 119 108 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
