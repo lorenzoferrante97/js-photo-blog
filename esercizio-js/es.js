@@ -13,7 +13,7 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
             <!-- card col -->
                 <div class="col-span-full md:col-span-4">
                     <!-- card -->
-                    <div class="relative flex flex-col transition bg-white rounded-lg shadow p-4u gap-3u shadow-makara-900/40 hover:rotate-12 hover:cursor-pointer">
+                    <div class="relative flex flex-col transition bg-white rounded-lg shadow p-4u gap-3u shadow-makara-900/40 hover:rotate-12 hover:cursor-pointer card-selector">
                         <!-- card pin -->
                         <img src="img/pin.svg" alt="pin" class="absolute w-14u">
                         <!-- card img -->
@@ -27,7 +27,15 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
                         </div>
                     </div>
                 </div>
-        `
+        `;
+    });
+
+    let card = document.querySelectorAll(".card-selector")
+    console.log(card)
+    card.forEach(element => {
+        element.addEventListener('click', () => {
+            console.log("ciao")
+        })
     });
 })
 .catch(error => {
