@@ -8,7 +8,8 @@ module.exports = {
     // ANCHOR --- FONT ---
 
     fontFamily: {
-      'custom': ['Urbanist', 'sans-serif'],
+      'custom-body': ['Edu TAS Beginner', 'serif'],
+      'custom-heading': ['Sometype Mono', 'serif'],
     },
 
     // ANCHOR --- FONT SIZE ---
